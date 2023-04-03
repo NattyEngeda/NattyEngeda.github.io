@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     // simulate loading delay
-    setTimeout(() => setIsLoading(false), 2000);
+    setTimeout(() => setIsLoading(false), 200);
   }, []);
 
   return isLoading ? (

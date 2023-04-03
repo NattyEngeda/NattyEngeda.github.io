@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       Alkatra: "cursive",
+      VT323: "monospace",
     },
   },
   plugins: [],

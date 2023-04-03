@@ -1,14 +1,13 @@
 import React from "react";
+import { Menu } from "@headlessui/react";
 
 export default function Header() {
   return (
     <header className="h-20  flex flex-row gap-20 items-center justify-between px-10 normshad shadow-xl">
       <div>
-        <h1 className="text-2xl font-bold font-Alkatra underline">
-          Natty Engeda
-        </h1>
+        <h1 className="text-2xl font-bold font-VT323">Natty.Engeda</h1>
       </div>
-      <div>
+      <div className="hidden md:block">
         <ul className="flex flex-row gap-10 font-semibold">
           <li>Home</li>
           <li>About</li>
@@ -16,6 +15,36 @@ export default function Header() {
           <li>Blog</li>
           <li>Contact</li>
         </ul>
+      </div>
+      <div>
+        <Menu>
+          <Menu.Button>More</Menu.Button>
+          <Menu.Items>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  className={`${active && "bg-blue-500"}`}
+                  href="/account-settings"
+                >
+                  Account settings
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  className={`${active && "bg-blue-500"}`}
+                  href="/account-settings"
+                >
+                  Documentation
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item disabled>
+              <span className="opacity-75">Invite a friend (coming soon!)</span>
+            </Menu.Item>
+          </Menu.Items>
+        </Menu>
       </div>
     </header>
   );
