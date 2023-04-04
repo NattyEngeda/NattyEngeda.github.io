@@ -14,4 +14,7 @@
     .normshad{
         @apply border border-gray-200
     }
+    .glassy-header{
+        @apply bg-white bg-opacity-50 backdrop-blur-xl drop-shadow-lg;
+    }
 }
