@@ -9,6 +9,7 @@ import {
 import Root from './routes/root';
 import ErrorPage from './other/error-page';
 import Index from './pages/Index';
+import ParticlesComponent from './utils/Particles';
 
 
 const router = createBrowserRouter([
@@ -29,7 +30,10 @@ const root = ReactDOM.createRoot(document.getElementById('root')!);
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <>
+      <RouterProvider router={router} />
+      <ParticlesComponent />
+    </>
   );
 }
 
