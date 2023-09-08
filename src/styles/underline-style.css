@@ -1,6 +1,6 @@
 .link-underline {
     border-bottom-width: 0;
-    background-image: linear-gradient(transparent, transparent), linear-gradient(#97d5d8, #98b0d2);
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#4572ba, #34568b);
     background-size: 0 3px;
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -12,14 +12,14 @@
     background-position: 0 100%;
 }
 
-.link-active{
+.link-active {
     border-bottom-width: 0;
-    background-image: linear-gradient(transparent, transparent), linear-gradient(#97d5d8, #98b0d2);
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#4572ba, #34568b);
     background-size: 0 3px;
     background-position: 0 100%;
     background-repeat: no-repeat;
     transition: background-size .5s ease-in-out;
     background-size: 100% 3px;
     background-position: 0 100%;
-    
+
 }
