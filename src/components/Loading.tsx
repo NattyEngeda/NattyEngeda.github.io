@@ -8,8 +8,12 @@ interface props {
 }
 const Loading: React.FC<props> = ({ type, color }) => {
   return (
-    <div className="w-full min-h-screen bg-blue-300 flex flex-row items-center justify-center">
-      <ReactLoading type={type} color={color} height={"10%"} width={"10%"} />
+    <div className="w-full min-h-screen bg-primary-500 flex flex-row items-center justify-center">
+      <ReactLoading
+        type={type}
+        color={color}
+        height={"10%"}
+        width={"10%"} />
     </div>
   );
 };

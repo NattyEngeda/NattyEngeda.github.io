@@ -16,14 +16,16 @@ import LinkList from "./components/LinkList";
 
 export default function Header() {
   return (
-    <header className="w-full h-20 flex flex-row gap-20 items-center justify-center shadow-xl glassy-header fixed">
+    <header className="w-full h-20 flex flex-row gap-20 items-center justify-center   fixed px-20">
       <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0">
-        <div className="transition duration-300">
+
+        <div className="transition duration-300 glassy-header px-10 py-3 rounded-3xl">
           <h1 className="link-underline  text-2xl font-bold font-VT323 text-white">
             Natty.Engeda
           </h1>
         </div>
-        <div className="hidden md:block">
+
+        <div className="hidden md:block px-10 py-3 rounded-3xl glassy-header">
           <ul className="flex flex-row gap-10 font-semibold">
             <LinkList link={"/"} name={"Home"} />
             <LinkList link={"/about"} name={"About"} />
@@ -32,6 +34,7 @@ export default function Header() {
             <LinkList link={"/contact"} name={"Contact"} />
           </ul>
         </div>
+
         <div className="md:hidden block">
           <Menu shadow="md" width={200}>
             <Menu.Target>
