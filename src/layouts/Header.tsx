@@ -16,7 +16,7 @@ import LinkList from "./components/LinkList";
 
 export default function Header() {
   return (
-    <header className="w-full h-20 flex flex-row gap-20 items-center justify-center   fixed px-20">
+    <header className="w-full h-20 flex flex-row gap-20 items-center justify-center fixed px-20">
       <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0">
 
         <div className="transition duration-300 glassy-header px-10 py-3 rounded-3xl">
