@@ -14,13 +14,22 @@ import { Link, useLocation, NavLink } from "react-router-dom";
 import "../styles/underline-style.css";
 import LinkList from "./components/LinkList";
 
+// Images
+import logo from '../assets/images/logo.png';
+
 export default function Header() {
   return (
-    <header className="w-full h-20 flex flex-row gap-20 items-center justify-center fixed px-20">
+    <header className="w-full h-20 flex flex-row gap-20 items-center justify-center fixed md:px-20">
       <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0">
 
-        <div className="transition duration-300 glassy-header px-10 py-3 rounded-3xl">
-          <h1 className="link-underline  text-2xl font-bold font-VT323 text-white">
+        <div className="transition duration-300 glassy-header md:px-5 md:py-1 rounded-3xl flex flex-row gap-2 items-center justify-center">
+          <div className="w-full">
+            <img
+              className="w-12 md:w-10 h-auto"
+              src={logo}
+              alt="Natty Engeda" />
+          </div>
+          <h1 className="hidden md:block link-underline text-2xl font-bold font-VT323 text-white">
             Natty.Engeda
           </h1>
         </div>
@@ -29,18 +38,26 @@ export default function Header() {
           <ul className="flex flex-row gap-10 font-semibold">
             <LinkList link={"/"} name={"Home"} />
             <LinkList link={"/about"} name={"About"} />
-            <LinkList link={"/portfolilo"} name={"Portfolio"} />
+            <LinkList link={"/portfolilo"} name={"Projects"} />
             <LinkList link={"/blog"} name={"Blog"} />
             <LinkList link={"/contact"} name={"Contact"} />
           </ul>
         </div>
 
         <div className="md:hidden block">
-          <Menu shadow="md" width={200}>
+          <Menu
+            shadow="md"
+            width={200}
+            styles={{
+
+            }}
+          >
             <Menu.Target>
-              <Button className="bg-violet-500 active:bg-violet-600 p-0 w-12 h-10">
+              {/* <Button className="bg-violet-500 active:bg-violet-600 p-0 w-12 h-10"> */}
+              <div className="w-12 h-12 glassy-header rounded-full flex items-center justify-center">
                 <IconMenu2 size={25} />
-              </Button>
+              </div>
+              {/* </Button> */}
             </Menu.Target>
 
             <Menu.Dropdown>

@@ -10,6 +10,10 @@ import Root from './routes/root';
 import ErrorPage from './other/error-page';
 import Index from './pages/Index';
 import ParticlesComponent from './utils/Particles';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
 
 
 const router = createBrowserRouter([
@@ -21,6 +25,22 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Index />,
+      },
+      {
+        path: 'about',
+        element: <About />
+      },
+      {
+        path: 'portfolio',
+        element: <Portfolio />
+      },
+      {
+        path: 'blog',
+        element: <Blog />
+      },
+      {
+        path: 'contact',
+        element: <Contact />
       }
     ]
   }
