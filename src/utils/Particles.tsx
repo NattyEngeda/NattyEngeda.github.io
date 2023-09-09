@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from 'tsparticles-slim';
-import { particlesOption } from "../JSON/particles";
+import particlesOption from "../JSON/particles";
 // import { loadFull } from 'tsparticles';
 
 const ParticlesComponent = () => {

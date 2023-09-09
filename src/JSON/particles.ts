@@ -1,4 +1,5 @@
-export const particlesOption = {
+
+const particlesOption: any = {
   autoPlay: true,
   background: {
     color: {
@@ -586,3 +587,5 @@ export const particlesOption = {
     }
   }
 };
+
+export default particlesOption;
