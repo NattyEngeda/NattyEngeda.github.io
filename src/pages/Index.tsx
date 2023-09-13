@@ -5,6 +5,21 @@ import Tilt from 'react-parallax-tilt';
 import programmer from './../assets/images/programmer.png'
 import face_iamge from './../assets/images/face_image_2.png'
 
+// Icons 
+import {
+  IconBrandInstagram,
+  IconBrandGithubFilled,
+  IconBrandLinkedin,
+  IconBrandTwitterFilled
+} from '@tabler/icons-react';
+
+import {
+  AiOutlineGithub,
+  AiOutlineTwitter,
+  AiFillLinkedin,
+  AiOutlineInstagram
+} from 'react-icons/ai';
+
 export default function Index() {
   return (
     <>
@@ -87,13 +102,38 @@ export default function Index() {
         </div>
 
         {/* Fourth Section */}
-        <div className="container w-full px-10 md:px-20 flex flex-col gap-5 text-white items-center justify-start">
-          <div className="text-">
+        <div className="container w-full px-10 md:px-20 flex flex-col gap-3 text-white items-center justify-start">
+          <div className="text-xl md:text-5xl font-VT323">
             <p>Find me On</p>
           </div>
-
+          <div className="text-lg md:text-xl">
+            <p>Feel free to contact me</p>
+          </div>
+          <div className="w-full flex flex-row items-center justify-center gap-5 py-5">
+            <AiOutlineGithub
+              className="icons-style"
+              onClick={() => {
+                window.open("https://www.github.com/nattyengeda");
+              }} />
+            <AiOutlineTwitter
+              className="icons-style"
+              onClick={() => {
+                window.open("https://www.twitter.com/nattyengeda")
+              }} />
+            <AiFillLinkedin
+              className="icons-style"
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/natnael-engeda-9202a51b7/")
+              }}
+            />
+            <AiOutlineInstagram
+              className="icons-style"
+              onClick={() => {
+                window.open("https://www.instagram.com/nattyengeda")
+              }}
+            />
+          </div>
         </div>
-
       </div>
     </>
   );
