@@ -6,12 +6,6 @@ import programmer from './../assets/images/programmer.png'
 import face_iamge from './../assets/images/face_image_2.png'
 
 // Icons 
-import {
-  IconBrandInstagram,
-  IconBrandGithubFilled,
-  IconBrandLinkedin,
-  IconBrandTwitterFilled
-} from '@tabler/icons-react';
 
 import {
   AiOutlineGithub,
@@ -102,8 +96,8 @@ export default function Index() {
         </div>
 
         {/* Fourth Section */}
-        <div className="container w-full px-10 md:px-20 flex flex-col gap-3 text-white items-center justify-start">
-          <div className="text-xl md:text-5xl font-VT323">
+        <div className="container w-full px-10 md:px-20 flex flex-col gap-1 md:gap-3 text-white items-center justify-start">
+          <div className="text-3xl md:text-5xl font-VT323">
             <p>Find me On</p>
           </div>
           <div className="text-lg md:text-xl">

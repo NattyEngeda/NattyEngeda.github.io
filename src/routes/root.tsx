@@ -8,7 +8,7 @@ export default function Root() {
   return (
     <>
       <Header />
-      <main className='w-full min-h-screen py-20 '>
+      <main className='w-full min-h-screen pt-20 '>
         <Outlet />
       </main>
       <Footer />
