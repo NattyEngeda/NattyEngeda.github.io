@@ -1,2 +1,50 @@
-# NattyEngeda.github.io
-My Portfolio
+
+# Portfolio Website 
+V 1.0
+
+
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/2qMMGLs/image-2023-09-21-16-04-50.png)
+
+
+
+## Authors
+
+- [@nattyengeda](https://www.github.com/nattyengeda)
+
+
+## Build With
+
+This Project is built with these technologies
+
+- Reactjs 
+- Tailwindcss
+- CSS3 
+- VsCode 
+
+## Features
+
+- Dark Mode  
+- Responsive Layout
+- Fullscreen mode
+- Cross platform
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm install 
+```
+
+```bash 
+  npm run dev 
+```
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at nattynengeda@gmail.com
+
