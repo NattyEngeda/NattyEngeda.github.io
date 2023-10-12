@@ -24,11 +24,6 @@ function App() {
         <Header />
         <main
           className="min-h-screen"
-          style={{
-            backgroundImage: `URL(
-              "https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg"
-            )`,
-          }}
         >
           <Routes>
             <Route path="/" element={<Index />} />
