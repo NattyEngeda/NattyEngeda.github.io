@@ -40,7 +40,7 @@ export default function Header() {
             <LinkList link={"/about"} name={"About"} />
             <LinkList link={"/projects"} name={"Projects"} />
             <LinkList link={"/blog"} name={"Blog"} />
-            <LinkList link={"/contact"} name={"Contact"} />
+            <LinkList link={"/contact"} name={"Contact"} /> */}
           </ul>
         </div>
 
@@ -61,7 +61,7 @@ export default function Header() {
             </Menu.Target>
 
             <Menu.Dropdown>
-              <Menu.Item className="active:bg-gray-300" component={Link} to="/">
+              {/* <Menu.Item className="active:bg-gray-300" component={Link} to="/">
                 Home
               </Menu.Item>
               <Menu.Item
@@ -82,13 +82,13 @@ export default function Header() {
                 className="active:bg-gray-300"
                 component={Link}
                 to="/portfolio"
-              >
-                Portfolio
-              </Menu.Item>
+              > */}
+              {/* Portfolio
+            </Menu.Item> */}
             </Menu.Dropdown>
           </Menu>
         </div>
       </div>
-    </header>
+    </header >
   );
 }
