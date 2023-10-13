@@ -24,18 +24,16 @@
 @apply text-white ;
 }
 .icons-style{
-  @apply bg-white text-secondary-500 w-10 h-10 rounded-full p-1 cursor-pointer item-transition
+@apply bg-white text-secondary-500 w-10 h-10 rounded-full p-1 cursor-pointer item-transition
 }
 .icons-style-small{
-  @apply text-white w-6 h-6 rounded-full cursor-pointer item-transition
+@apply text-white w-6 h-6 rounded-full cursor-pointer item-transition
 }
 .item-transition{
-  @apply transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300
+@apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
 }
 }
 
 .gradient_background {
-  background: linear-gradient(90deg, #FEE5E6, #CDFAF0);
-  height: 100vh;
-  width: 100vw;
+background: linear-gradient(90deg, #FEE5E6, #CDFAF0);
 }

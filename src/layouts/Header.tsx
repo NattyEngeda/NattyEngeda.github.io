@@ -22,7 +22,7 @@ export default function Header() {
     <header className="z-40 w-full h-20 flex flex-row gap-20 items-center justify-center fixed md:px-20">
       <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0">
 
-        <div className="transition duration-300 glassy-header md:px-5 md:py-1 rounded-2xl flex flex-row gap-2 items-center justify-center">
+        <div className="transition duration-300 glassy-header md:px-5 md:py-1 rounded-xl flex flex-row gap-2 items-center justify-center">
           <div className="w-full">
             <img
               className="w-12 md:w-10 h-auto"
@@ -34,7 +34,7 @@ export default function Header() {
           </h1>
         </div>
 
-        <div className="hidden md:block px-10 py-3 rounded-2xl glassy-header">
+        <div className="hidden md:block px-10 py-3 rounded-xl glassy-header">
           <ul className="flex flex-row gap-10 font-semibold">
             <LinkList link={"/"} name={"Home"} />
             <LinkList link={"/about"} name={"About"} />
