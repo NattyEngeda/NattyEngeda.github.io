@@ -17,7 +17,7 @@ import {
 export default function Index() {
   return (
     <>
-      <div className="w-full min-h-screen flex flex-col gap-5 md:py-10">
+      <div className="w-full mx-auto container min-h-screen flex flex-col gap-5 md:py-10">
 
         {/* First Section */}
         <div className="container px-5 md:px-20 md:py-20 grid grid-colrs-1 md:grid-cols-2 gap-10">

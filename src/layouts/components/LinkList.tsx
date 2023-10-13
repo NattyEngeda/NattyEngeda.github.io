@@ -10,7 +10,7 @@ const LinkList: React.FC<props> = ({ link, name }) => {
   return (
     <NavLink
       className={({ isActive }) =>
-        isActive ? "link-active text-white" : "normal-header link-underline"
+        isActive ? "link-active text-black" : "normal-header link-underline"
       }
       to={link}
     >
