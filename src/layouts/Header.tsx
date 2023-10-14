@@ -19,22 +19,21 @@ import logo from '../assets/images/logo.png';
 
 export default function Header() {
   return (
-    <header className="z-40 w-full h-20 flex flex-row gap-20 items-center justify-center fixed md:px-20">
-      <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0">
-
-        <div className="transition duration-300 glassy-header md:px-5 md:py-1 rounded-xl flex flex-row gap-2 items-center justify-center">
+    <header className="z-40 w-full h-28 flex flex-row gap-20 items-center justify-center fixed md:px-20 glassy-header">
+      <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0 ">
+        <div className="transition duration-300  md:px-5 md:py-1  flex flex-row gap-2 items-center justify-center">
           <div className="w-full">
             <img
-              className="w-12 md:w-10 h-auto"
+              className="w-12 md:w-12 h-auto"
               src={logo}
               alt="Natty Engeda" />
           </div>
-          <h1 className="hidden md:block link-underline text-2xl font-bold font-VT323 text-black">
+          <h1 className="hidden md:block link-underline text-3xl font-bold font-VT323 text-black">
             Natty.Engeda
           </h1>
         </div>
 
-        <div className="hidden md:block px-10 py-3 rounded-xl glassy-header">
+        <div className="hidden lg:block px-10 py-3 ">
           <ul className="flex flex-row gap-10 font-semibold">
             <LinkList link={"/"} name={"Home"} />
             <LinkList link={"/about"} name={"About"} />
@@ -44,7 +43,7 @@ export default function Header() {
           </ul>
         </div>
 
-        <div className="md:hidden block">
+        <div className="lg:hidden block">
           <Menu
             shadow="md"
             width={200}
@@ -61,7 +60,7 @@ export default function Header() {
             </Menu.Target>
 
             <Menu.Dropdown>
-              {/* <Menu.Item className="active:bg-gray-300" component={Link} to="/">
+              <Menu.Item className="active:bg-gray-300" component={Link} to="/">
                 Home
               </Menu.Item>
               <Menu.Item
@@ -82,9 +81,9 @@ export default function Header() {
                 className="active:bg-gray-300"
                 component={Link}
                 to="/portfolio"
-              > */}
-              {/* Portfolio
-            </Menu.Item> */}
+              >
+                Portfolio
+              </Menu.Item>
             </Menu.Dropdown>
           </Menu>
         </div>

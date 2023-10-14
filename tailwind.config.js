@@ -27,12 +27,15 @@ module.exports = {
         700: '#016556',
         800: '#004c41',
         900: '#00332b'
-      }
+      },
+      'fontColor': '#14213D',
+      'fontColor2': '#6B7385',
       }
     },
     fontFamily: {
       Alkatra: "cursive",
       VT323: "monospace",
+      ProductSans: "sans-serif",
     },
   },
   plugins: [],
