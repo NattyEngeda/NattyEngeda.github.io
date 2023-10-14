@@ -36,7 +36,7 @@ export default function Header() {
         <div className="hidden lg:block px-10 py-3 ">
           <ul className="flex flex-row gap-10 font-semibold">
             <LinkList link={"/"} name={"Home"} />
-            <LinkList link={"/about"} name={"About"} />
+            <LinkList link={"/skills"} name={"Skills"} />
             <LinkList link={"/projects"} name={"Projects"} />
             <LinkList link={"/blog"} name={"Blog"} />
             <LinkList link={"/contact"} name={"Contact"} />
@@ -66,9 +66,9 @@ export default function Header() {
               <Menu.Item
                 className="active:bg-gray-300"
                 component={Link}
-                to="/about"
+                to="/skills"
               >
-                About
+                Skills
               </Menu.Item>
               <Menu.Item
                 className="active:bg-gray-300"
