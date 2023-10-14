@@ -38,5 +38,7 @@ module.exports = {
       ProductSans: "sans-serif",
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 };

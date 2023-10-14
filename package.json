@@ -24,6 +24,7 @@
     "react-parallax-tilt": "^1.7.166",
     "react-router-dom": "^6.10.0",
     "react-tsparticles": "^2.12.2",
+    "tailwind-scrollbar": "^3.0.5",
     "tsparticles": "^2.12.0",
     "typewriter-effect": "^2.20.1"
   },
