@@ -20,7 +20,7 @@
 @apply border border-gray-300
 }
 .glassy-header{
-@apply bg-white bg-opacity-20 backdrop-blur-lg ;
+@apply bg-white bg-opacity-20 backdrop-blur-sm ;
 }
 .active-header{
 @apply  text-black font-bold text-xl ;

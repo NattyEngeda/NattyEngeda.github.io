@@ -1,9 +1,11 @@
 import Tilt from 'react-parallax-tilt';
 
-export default function SkillBox({ name, image }: { name: string, image: string }) {
+export default function SkillBox({ name, image, link }: { name: string, image: string, link: string }) {
   return (
-    <Tilt gyroscope={true}>
+    <Tilt
+      gyroscope={true}>
       <div
+        onClick={() => window.open(link, '_blank')}
         className="flex justify-center items-center sm:w-[260px] w-full sm:h-[300px] h-[250px] rounded-xl backdrop-blur-sm bg-[#ffffff0a] shadow-[0_8px_30px_rgb(0,0,0,0.12)] scale-up">
         <img
           draggable="false"
