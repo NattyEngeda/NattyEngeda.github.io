@@ -40,7 +40,7 @@ export default function Skills() {
               {/* Basic */}
               <div>
                 <h1 className='text-3xl md:text-4xl font-llight '>Basics</h1>
-                <div className='flex flex-col md:flex-row gap-10 p-2 py-5'>
+                <div className='flex flex-col md:flex-row md:flex-wrap gap-10 p-2 py-5'>
                   <SkillBox link={'https://www.w3schools.com/html/'} name={'HTML/CSS/JS'} image={html_css_js} />
                   <SkillBox link={'https://www.typescriptlang.org/'} name={'Typescript'} image={ts} />
                   <SkillBox link='https://www.python.org/' name={'Python'} image={python} />
@@ -50,7 +50,7 @@ export default function Skills() {
               {/* Frameworks */}
               <div>
                 <h1 className='text-3xl md:text-4xl font-llight '>Frameworks</h1>
-                <div className='flex flex-col  md:flex-row gap-10 p-2 py-5'>
+                <div className='flex flex-col md:flex-row md:flex-wrap gap-10 p-2 py-5'>
                   <SkillBox link='https://react.dev/' name={'React.js'} image={reactjs} />
                   <SkillBox link='https://nextjs.org/' name={'Next.js'} image={nextjs} />
                   <SkillBox link='https://vuejs.org/' name={'Vue.js'} image={vuejs} />
@@ -63,7 +63,7 @@ export default function Skills() {
               {/* Backend */}
               <div>
                 <h1 className='text-3xl md:text-4xl font-llight '>Backend</h1>
-                <div className='flex flex-col  md:flex-row gap-10 p-2 py-5'>
+                <div className='flex flex-col md:flex-row md:flex-wrap gap-10 p-2 py-5'>
                   <SkillBox link='https://www.php.net/' name={'PHP'} image={phpimg} />
                   <SkillBox link='https://nodejs.org/en' name={'Node.js'} image={nodejs} />
                   <SkillBox link='https://expressjs.com/' name={'Express.js'} image={expressjs} />
@@ -75,7 +75,7 @@ export default function Skills() {
               {/* Database */}
               <div>
                 <h1 className='text-3xl md:text-4xl font-llight '>Database</h1>
-                <div className='flex flex-col  md:flex-row gap-10 p-2 py-5'>
+                <div className='flex flex-col md:flex-row md:flex-wrap gap-10 p-2 py-5'>
                   <SkillBox link='https://www.mysql.com/' name={'MySQL'} image={mysql} />
                   <SkillBox link='https://www.mongodb.com/' name={'MongoDB'} image={mongodb} />
                   <SkillBox link='https://www.sqlite.org/index.html' name={'SQLite'} image={sqlite} />
@@ -87,6 +87,6 @@ export default function Skills() {
         </div>
 
       </div>
-    </div>
+    </div >
   )
 }

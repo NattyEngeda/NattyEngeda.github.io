@@ -19,7 +19,7 @@ import logo from '../assets/images/logo.png';
 
 export default function Header() {
   return (
-    <header className="z-40 w-full h-28 flex flex-row gap-20 items-center justify-center fixed md:px-20 glassy-header">
+    <header className="z-40 w-full h-24 flex flex-row gap-20 items-center justify-center fixed md:px-20 glassy-header">
       <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0 ">
         <div className="transition duration-300  md:px-5 md:py-1  flex flex-row gap-2 items-center justify-center">
           <div className="w-full">
@@ -34,12 +34,15 @@ export default function Header() {
         </div>
 
         <div className="hidden lg:block px-10 py-3 ">
-          <ul className="flex flex-row gap-10 font-semibold">
+          <ul className="flex flex-row items-center gap-10 font-semibold">
             <LinkList link={"/"} name={"Home"} />
             <LinkList link={"/skills"} name={"Skills"} />
             <LinkList link={"/projects"} name={"Projects"} />
-            <LinkList link={"/blog"} name={"Blog"} />
             <LinkList link={"/contact"} name={"Contact"} />
+            <button
+              className="transition px-5 py-4 bg-[#017f6c] rounded-lg text-white hover:bg-transparent border hover:border-[#017f6c] hover:text-[#017f6c] outline-none">
+              Resume
+            </button>
           </ul>
         </div>
 
