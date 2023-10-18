@@ -18,7 +18,7 @@ import sqlite from '../assets/images/skills/sqlite.png';
 
 export default function Skills() {
   return (
-    <div className='w-full min-h-screen'>
+    <div className='w-full min-h-screen md:px-20'>
       <div className='w-full mx-auto flex flex-col gap-5 md:gap-8 p-2 px-5 md:px-0 py-10 container font-ProductSans'>
         <div>
           <h1 className='text-5xl md:text-6xl font-bold '>Overview.</h1>

@@ -28,6 +28,9 @@ module.exports = {
         800: '#004c41',
         900: '#00332b'
       },
+      'third': {
+          500: '#017f6c'
+      },
       'fontColor': '#14213D',
       'fontColor2': '#6B7385',
       }

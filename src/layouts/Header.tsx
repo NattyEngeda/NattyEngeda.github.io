@@ -19,7 +19,7 @@ import logo from '../assets/images/logo.png';
 
 export default function Header() {
   return (
-    <header className="z-40 w-full h-24 flex flex-row gap-20 items-center justify-center fixed md:px-20 glassy-header">
+    <header className="z-40 w-full h-20 md:h-24 flex flex-row gap-20 items-center justify-center fixed md:px-20 glassy-header">
       <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0 ">
         <div className="transition duration-300  md:px-5 md:py-1  flex flex-row gap-2 items-center justify-center">
           <div className="w-full">
