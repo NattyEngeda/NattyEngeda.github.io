@@ -31,8 +31,6 @@ export default function Contact() {
     });
   }
 
-
-
   return (
     <div className='flex flex-col gap-10 items-center justify-center md:py-10 font-ProductSans'>
       <div>

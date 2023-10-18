@@ -16,6 +16,7 @@ import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Skills from './pages/Skills'
+import Resume from './pages/Resume'
 
 
 const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: 'skills',
         element: <Skills />
+      },
+      {
+        path: 'resume',
+        element: <Resume />
       }
     ]
   }

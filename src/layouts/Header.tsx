@@ -39,10 +39,11 @@ export default function Header() {
             <LinkList link={"/skills"} name={"Skills"} />
             <LinkList link={"/projects"} name={"Projects"} />
             <LinkList link={"/contact"} name={"Contact"} />
-            <button
+            <Link
+              to={'/resume'}
               className="transition px-5 py-4 bg-[#017f6c] rounded-lg text-white hover:bg-transparent border hover:border-[#017f6c] hover:text-[#017f6c] outline-none">
               Resume
-            </button>
+            </Link>
           </ul>
         </div>
 
@@ -83,9 +84,9 @@ export default function Header() {
               <Menu.Item
                 className="active:bg-gray-300"
                 component={Link}
-                to="/portfolio"
+                to="/resume"
               >
-                Portfolio
+                Resume
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>
