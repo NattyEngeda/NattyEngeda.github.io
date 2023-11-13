@@ -1,18 +1,20 @@
-import { DocumentView } from './components/DocumentView';
-import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer';
-import { PDFViewer } from '@react-pdf/renderer';
-
-import pdf from '../assets/document/resume.pdf';
-
+import { useState } from "react"
+import { CircleLoader } from "react-awesome-loaders";
 
 export default function Resume() {
+  const [Loading, setLoading] = useState(true);
+
   return (
-    <div className='flex flex-col gap-10 items-center justify-start px-20 w-full min-h-screen '>
-      <PDFDownloadLink document={<DocumentView />} fileName={pdf}>
-        {({ blob, url, loading, error }) =>
-          loading ? 'Loading document...' : 'Download now!'
-        }
-      </PDFDownloadLink>
+    <div className='flex flex-col gap-10 items-center justify-start md:px-20 w-full min-h-screen pt-10'>
+      {
+        Loading && <div>Loading..</div>
+      }
+      <iframe
+      className='w-full h-[85vh]'
+       src="https://drive.google.com/file/d/1JPsFngCqRvIbpo71XMM8KYfDKXoxJ-SC/preview"
+       allow="autoplay"
+       onLoad={()=>setLoading(!Loading)}
+       />
     </div>
   )
 }
