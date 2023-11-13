@@ -37,7 +37,7 @@ export default function Header() {
           <ul className="flex flex-row items-center gap-10 font-semibold">
             <LinkList link={"/"} name={"Home"} />
             <LinkList link={"/skills"} name={"Skills"} />
-            <LinkList link={"/projects"} name={"Projects"} />
+            <LinkList link={"/portfolio"} name={"Portfolio"} />
             <LinkList link={"/contact"} name={"Contact"} />
             <Link
               to={'/resume'}
