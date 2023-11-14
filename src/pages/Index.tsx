@@ -72,7 +72,7 @@ export default function Index() {
               {/* Projects */}
               <div className='px-2 py-5'>
                 <Link
-                  to='/projects'
+                  to='/portfolio'
                   className='px-10 py-3 rounded-xl border-4 border-fontColor2 hover:text-white text-ProductSans hover:bg-[#14213D] hover:border-[#14213D]'>
                   Projects
                 </Link>
