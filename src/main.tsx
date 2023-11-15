@@ -12,7 +12,7 @@ import ErrorPage from './other/error-page';
 import Index from './pages/Index';
 import ParticlesComponent from './utils/Particles';
 import About from './pages/About';
-import Portfolio from './pages/Portfolio';
+import Portfolio from './pages/portfolio/index';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Skills from './pages/Skills'

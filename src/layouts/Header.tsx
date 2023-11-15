@@ -84,6 +84,13 @@ export default function Header() {
               <Menu.Item
                 className="active:bg-gray-300"
                 component={Link}
+                to="/portfolio"
+              >
+                Portfolio
+              </Menu.Item>
+              <Menu.Item
+                className="active:bg-gray-300"
+                component={Link}
                 to="/resume"
               >
                 Resume
