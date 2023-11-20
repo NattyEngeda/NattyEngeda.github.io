@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { CircleLoader } from "react-awesome-loaders";
+import ScaleLoader  from "react-spinners/ClipLoader";
 
 export default function Resume() {
   const [Loading, setLoading] = useState(true);
@@ -9,13 +9,7 @@ export default function Resume() {
       {
         Loading && 
         <div>
-           <CircleLoader
-        meshColor={"#6366F1"}
-        lightColor={"#E0E7FF"}
-        duration={1.5}
-        desktopSize={"90px"}
-        mobileSize={"64px"}
-      />
+           <ScaleLoader  size={100} color="#36d7b7" />
       </div>
       }
       <iframe
