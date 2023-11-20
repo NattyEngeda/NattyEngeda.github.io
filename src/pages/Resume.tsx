@@ -7,7 +7,16 @@ export default function Resume() {
   return (
     <div className='flex flex-col gap-10 items-center justify-start md:px-20 w-full min-h-screen pt-10'>
       {
-        Loading && <div>Loading..</div>
+        Loading && 
+        <div>
+           <CircleLoader
+        meshColor={"#6366F1"}
+        lightColor={"#E0E7FF"}
+        duration={1.5}
+        desktopSize={"90px"}
+        mobileSize={"64px"}
+      />
+      </div>
       }
       <iframe
       className='w-full h-[85vh]'

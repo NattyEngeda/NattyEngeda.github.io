@@ -32,7 +32,7 @@ export default function Contact() {
   }
 
   return (
-    <div className='flex flex-col gap-10 items-center justify-center md:py-10 font-ProductSans'>
+    <div className='flex flex-col gap-10 items-center justify-center py-12 md:py-10 font-ProductSans'>
       <div>
         <h1 className=' text-3xl md:text-6xl font-bold '>Contact Me</h1>
       </div>

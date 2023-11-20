@@ -16,7 +16,7 @@ export default function Index() {
         <div className='flex flex-col gap-10 items-start justify-start  p-5 font-ProductSans text-fontColor'>
           <div className='flex flex-col gap-5'>
             <h1 className='text-4xl md:text-4xl lg:text-6xl font-bold font-ProductSans '>Natnael Engeda</h1>
-            <p className='text-xl md:text-xl lg:text-3xl font-semibold'>(Fullstack Developer)</p>
+            <p className='text-xl md:text-xl lg:text-3xl font-semibold'>(Software Developer)</p>
             <div>
               <p
                 className='text-lg  lg:text-3xl text-[#6B7385]'>A passionate individual who always thrives to work on end to end products which develop sustainable and highly scalable social and technical systems to create impact.</p>
