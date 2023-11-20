@@ -1,8 +1,12 @@
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import ScaleLoader  from "react-spinners/ClipLoader";
 
 export default function Resume() {
   const [Loading, setLoading] = useState(true);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }
+  , []);
 
   return (
     <div className='flex flex-col gap-10 items-center justify-start md:px-20 w-full min-h-screen pt-10'>
