@@ -2,7 +2,11 @@ import { CiLink } from 'react-icons/ci'
 
 export default function PortfolioCard({name, image, imageDescription, url, description,color}: {name:string,image: string,imageDescription:string, url:string, description:string,color:string}) {
   return (
-    <div className="normshad flex flex-col rounded-xl overflow-hidden shadow-md item-transition cursor-pointer">
+    <div
+    onClick={()=>{
+      window.open(url)
+    }}
+    className="normshad flex flex-col rounded-xl overflow-hidden shadow-md item-transition cursor-pointer">
     {/* Image */}
     <div className="w-full h-full overflow-hidden">   
      <img

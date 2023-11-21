@@ -11,7 +11,8 @@ import coolPic from '../assets/images/cool_pic.svg';
 export default function Index() {
   return (
     <div className='w-full  relative flex flex-col'>
-      <div className='w-full mx-auto container  grid grid-cols-1 md:grid-cols-2 md:px-20 py-10'>
+      <div className='w-full mx-auto container grid grid-cols-1 md:grid-cols-2 md:px-10 xl:px-20 py-10 md:gap-32'>
+
         {/* First Grid */}
         <div className='flex flex-col gap-10 items-start justify-start  p-5 font-ProductSans text-fontColor'>
           <div className='flex flex-col gap-5'>
@@ -80,6 +81,8 @@ export default function Index() {
             </div>
           </div>
         </div>
+
+
         {/* Second Grid */}
         <div className=' flex items-start justify-center py-10'>
           <img
