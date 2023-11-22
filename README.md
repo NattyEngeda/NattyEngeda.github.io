@@ -5,7 +5,7 @@ V 1.0
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/2qMMGLs/image-2023-09-21-16-04-50.png)
+![App Screenshot](https://i.ibb.co/gy9vc2z/image.png)
 
 
 
