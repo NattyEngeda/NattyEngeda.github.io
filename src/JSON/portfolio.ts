@@ -1,7 +1,8 @@
 import semahImage from '../assets/images/portolio/semah-image.png';
 import fistumImage from '../assets/images/portolio/fitsum-image.jpg';
+import tomocaImage from '../assets/images/portolio/tomoca-image.png';
 
-export const portfolio = [
+export const websitesProjects = [
     {
     id: 1,
     name: "Fitsum Printing and Advert ",
@@ -20,4 +21,16 @@ export const portfolio = [
     url:"https://www.semahmch.com/",
     description:"Semah Mother Child Hospital Website for Online Appointment and Medical Information..."
 },
+]
+
+export const mobileAppsProjects = [
+    {
+        id: 1, 
+        name: "Tomoca App",
+        color: "#FA8D18",
+        image: tomocaImage,
+        imageDescription: "Tomoca App Image",
+        url:"https://play.google.com/store/apps/details?id=com.tomoca.app&hl=en&gl=US",
+        description:"Tomoca App is an app that allows you to order coffee from the nearest Tomoca Coffee Shop."
+    }
 ]

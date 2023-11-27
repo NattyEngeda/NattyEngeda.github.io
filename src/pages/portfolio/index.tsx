@@ -1,6 +1,6 @@
 
 // Images 
-import { portfolio } from '../../JSON/portfolio';
+import { mobileAppsProjects, websitesProjects } from '../../JSON/portfolio';
 import semahImage from '../../assets/images/portolio/semah-image.png';
 
 // Icons 
@@ -16,9 +16,15 @@ export default function Portfolio() {
         <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-fontColor">Portfolio</h1>
       </div>
 
+      {/* Websites */}
+      <div>
+        <div className="w-full py-2 flex items-center justify-start">
+          <h1 className="text-4xl md:text-3xl xl:text-4xl font-bold text-fontColor link-underline link-active">Websites</h1>
+        </div>
+
       <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 py-5 md:py-12 ">
       {
-        portfolio.map((item)=>(
+        websitesProjects.map((item)=>(
           <PortfolioCard
           key={item.id}
           name={item.name}
@@ -30,6 +36,31 @@ export default function Portfolio() {
         ))
       }
       </div>
+      </div>
+
+      {/* Mobile Applications */}
+      <div>
+        <div className="w-full py-2 flex items-center justify-start">
+          <h1 className="text-4xl md:text-3xl xl:text-4xl font-bold text-fontColor link-underline link-active">Mobile Applications</h1>
+        </div>
+
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 py-5 md:py-12 ">
+      {
+        mobileAppsProjects.map((item)=>(
+          <PortfolioCard
+          key={item.id}
+          name={item.name}
+          color={item.color}
+          image={item.image}
+          imageDescription={item.imageDescription}
+          url={item.url}
+          description={item.description}/>
+        ))
+      }
+      </div>
+      </div>
+
+
   </div>
   );
 }
